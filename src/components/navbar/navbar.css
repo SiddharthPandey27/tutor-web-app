@@ -1,0 +1,58 @@
+.navbar-div {
+    margin: 10px 0;
+    width: 80%;
+    position: relative;
+}
+
+.brand-name {
+    display: inline-block;
+    font-size: 35px;
+    color: orange;
+}
+
+.links {
+    display: inline-block;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+}
+
+.link {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: blue;
+}
+
+.active {
+    border-bottom: 2px solid blue;
+    color: blue;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-div {
+        width: 100%;
+        margin: 0;
+    }
+
+    .brand-name {
+        font-size: 25px;
+        display: block;
+        text-align: center;
+    }
+
+    .links {
+        padding: 5px 0;
+        display: block;
+        position: inherit;
+        right: unset;
+        text-align: center;
+    }
+
+    .link {
+        padding: 5px;
+        font-size: 14px;
+    }
+}
